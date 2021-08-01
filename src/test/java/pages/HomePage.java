@@ -33,7 +33,7 @@ public class HomePage {
     }
 
     public void clickCookies(){
-        wait = new WebDriverWait(driver, 10);
+        wait = new WebDriverWait(driver, 20);
         wait.until(ExpectedConditions.elementToBeClickable(cookiesAcceptButton));
         driver.findElement(cookiesAcceptButton).click();
     }
