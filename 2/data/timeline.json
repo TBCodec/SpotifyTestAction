@@ -1,0 +1,39 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "children" : [ {
+    "name" : "fv-az83-150",
+    "children" : [ {
+      "name" : "2929@fv-az83-150.ForkJoinPool-1-worker-1(12)",
+      "children" : [ {
+        "name" : "testSuccessfulLogin()",
+        "uid" : "95da36b746e6973d",
+        "parentUid" : "8fbbdb128f5f79543d9e905b8270c6b7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627828133966,
+          "stop" : 1627828138115,
+          "duration" : 4149
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "testSuccessfulRegistration()",
+        "uid" : "17ad0ebc22f039e3",
+        "parentUid" : "8fbbdb128f5f79543d9e905b8270c6b7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627828138264,
+          "stop" : 1627828138476,
+          "duration" : 212
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "8fbbdb128f5f79543d9e905b8270c6b7"
+    } ],
+    "uid" : "478b5bac76315a19a6ea22bd78841414"
+  } ],
+  "name" : "timeline"
+}
