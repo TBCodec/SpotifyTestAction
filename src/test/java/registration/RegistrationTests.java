@@ -7,7 +7,7 @@ import pages.RegistrationPage;
 
 public class RegistrationTests extends BaseTests {
 
-    @Test
+    //@Test
     public void testSuccessfulRegistration(){
         RegistrationPage registrationPage = homePage.clickRegistration();
         registrationPage.setIAmNotRobot();
