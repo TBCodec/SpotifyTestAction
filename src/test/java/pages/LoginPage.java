@@ -29,8 +29,9 @@ public class LoginPage {
 
     public OpenSpotifyPage clickSignInButton(){
         driver.findElement(signInButton).click();
-        wait = new WebDriverWait(driver, 10);
-        wait.until(ExpectedConditions.urlToBe("https://open.spotify.com/"));
+        wait = new WebDriverWait(driver, 20);
+        wait.until(ExpectedConditions.urlContains("https://open.spotify.com/"));
+        System.out.println(driver.getCurrentUrl());
         return new OpenSpotifyPage(driver);
     }
 

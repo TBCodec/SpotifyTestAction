@@ -1,10 +1,9 @@
 package registration;
 
 import base.BaseTests;
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Test;
 import pages.RegistrationPage;
 
-import static org.testng.Assert.assertEquals;
 
 public class RegistrationTests extends BaseTests {
 

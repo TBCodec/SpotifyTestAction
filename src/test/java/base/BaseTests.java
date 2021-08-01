@@ -1,12 +1,11 @@
 package base;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
 import pages.HomePage;
 
 public class BaseTests {
@@ -16,13 +15,17 @@ public class BaseTests {
 
     @BeforeEach
     public void setUp(){
-        System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
+        WebDriverManager.chromedriver().setup();
+        //System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
         ChromeOptions options = new ChromeOptions();
         options.addArguments("start-maximized");
+        options.addArguments("--no-sandbox");
+        options.addArguments("--disable-dev-shm-usage");
+        //options.addArguments("--headless");
 
-        options.addArguments("disable-infobars");
+        /*options.addArguments("disable-infobars");
         options.addArguments("-incognito");
-        options.addArguments("--disable-extensions");
+        options.addArguments("--disable-extensions");*/
         driver = new ChromeDriver(options);
         driver.get("https://open.spotify.com/");
 

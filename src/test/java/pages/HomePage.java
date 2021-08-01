@@ -18,6 +18,7 @@ public class HomePage {
     }
 
     public LoginPage clickProfile(){
+        wait = new WebDriverWait(driver, 10);
         wait.until(ExpectedConditions.visibilityOfElementLocated(profileButton));
         driver.findElement(profileButton).click();
 
