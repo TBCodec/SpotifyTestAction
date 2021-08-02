@@ -7,8 +7,6 @@ import org.junit.jupiter.api.Test;
 import pages.LoginPage;
 import pages.OpenSpotifyPage;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
 public class LoginTest extends BaseTests {
 
     @Test
@@ -17,8 +15,8 @@ public class LoginTest extends BaseTests {
         loginPage.setUserNameField("litro@freemail.hu");
         loginPage.setPasswordField("x2L3c4V5");
         OpenSpotifyPage openSpotifyPage = loginPage.clickSignInButton();
-        //String logedInUser = openSpotifyPage.getUserName();
-        //assertEquals(logedInUser, "litro");
+        String logInUser = openSpotifyPage.getUserName();
+        Assertions.assertEquals(logInUser, "litro");
     }
 
 }

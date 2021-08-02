@@ -9,7 +9,9 @@ import java.util.concurrent.TimeUnit;
 
 public class OpenSpotifyPage {
 
-    private By userName = By.xpath("//*[@id=\"main\"]//figure//parent::button//span");
+    //private By userName = By.xpath("//*[@id=\"main\"]//figure//parent::button//span");
+    private By searchField = By.xpath("//a[@href=\"/search\"]");
+    private By welcomeField = By.xpath("//*[@id=\"main\"]//h1");
 
     private WebDriver driver;
     private WebDriverWait wait;
@@ -25,9 +27,9 @@ public class OpenSpotifyPage {
 
     public String getUserName(){
         wait = new WebDriverWait(driver, 5);
-        System.out.println(driver.getCurrentUrl());
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("main")));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(userName));
-        return driver.findElement(userName).getText();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(searchField));
+        driver.findElement(searchField).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(welcomeField));
+        return driver.findElement(welcomeField).getText();
     }
 }
