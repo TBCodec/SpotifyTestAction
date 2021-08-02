@@ -1,0 +1,22 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "children" : [ {
+    "name" : "login.LoginTest",
+    "children" : [ {
+      "name" : "testSuccessfulLogin()",
+      "uid" : "f57442182c4496",
+      "parentUid" : "b4388fd6319efc981a634ab840782df5",
+      "status" : "broken",
+      "time" : {
+        "start" : 1627897378495,
+        "stop" : 1627897409349,
+        "duration" : 30854
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "b4388fd6319efc981a634ab840782df5"
+  } ],
+  "name" : "suites"
+}
