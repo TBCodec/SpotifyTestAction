@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "element click intercepted: Element <a class=\"NavBarItem__StyledButtonReset-sc-1vd1h1-0 cMXvgX\" draggable=\"false\" aria-label=\"active\" href=\"/search\">...</a> is not clickable at point (719, 1056). Other element would receive the click: <div id=\"onetrust-policy\">...</div>\n  (Session info: headless chrome=92.0.4515.107)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az82-711', ip: '10.1.1.43', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '1.8.0_302'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /tmp/.com.google.Chrome.GXgPO8}, goog:chromeOptions: {debuggerAddress: localhost:9222}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: e70afe75954d89ac48366a081ae34272",
+      "children" : [ {
+        "name" : "testSuccessfulLogin()",
+        "uid" : "2a03a61c710d9397",
+        "parentUid" : "fa2f0cf3033b6e8347ce0d83d0cf777d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627895337035,
+          "stop" : 1627895351937,
+          "duration" : 14902
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "fa2f0cf3033b6e8347ce0d83d0cf777d"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
