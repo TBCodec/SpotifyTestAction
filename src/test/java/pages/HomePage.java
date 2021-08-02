@@ -52,6 +52,7 @@ public class HomePage {
     public void clickCookies(){
         wait = new WebDriverWait(driver, 20);
 
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id=\"onetrust-policy\"]")));
         wait.until(ExpectedConditions.visibilityOfElementLocated(cookiesAcceptButton));
         /*
         try {
