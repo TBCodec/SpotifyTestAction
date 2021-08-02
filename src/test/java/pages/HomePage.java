@@ -2,8 +2,11 @@ package pages;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.List;
 
 public class HomePage {
 
@@ -53,7 +56,15 @@ public class HomePage {
         wait = new WebDriverWait(driver, 20);
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id=\"onetrust-policy\"]")));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id=\"onetrust-button-group-parent\"]")));
+        By onetrustGroup = By.xpath("//*[@id=\"onetrust-group-container\"]/parent::div/div");
+        wait.until(ExpectedConditions.visibilityOfElementLocated(onetrustGroup));
+        List<WebElement> listOneTrustGroup = driver.findElements(onetrustGroup);
+        for (WebElement element : listOneTrustGroup){
+
+            System.out.println(element.getAttribute("id"));
+            System.out.println(element.getLocation());
+            System.out.println();
+        }
         wait.until(ExpectedConditions.visibilityOfElementLocated(cookiesAcceptButton));
         /*
         try {

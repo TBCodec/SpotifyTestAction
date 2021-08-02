@@ -8,6 +8,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import com.google.common.io.Files;
+import utils.AddCookie;
 import utils.WindowManager;
 
 import java.io.File;
@@ -84,6 +85,8 @@ public class LoginPage {
         //takeScreenshot();
         wait.until(ExpectedConditions.urlContains("https://open.spotify.com/"));
         System.out.println(driver.getCurrentUrl());
+        AddCookie addCookie = new AddCookie(driver);
+        addCookie.saveCookiesToFile();
         return new OpenSpotifyPage(driver);
     }
 

@@ -6,6 +6,7 @@ import org.junit.jupiter.api.RepeatedTest;
 import org.junit.jupiter.api.Test;
 import pages.LoginPage;
 import pages.OpenSpotifyPage;
+import utils.AddCookie;
 
 public class LoginTest extends BaseTests {
 
