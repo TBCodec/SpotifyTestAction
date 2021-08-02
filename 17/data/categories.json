@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Expected condition failed: waiting for visibility of element located by By.xpath: //div[@id=\"onetrust-button-group-parent\"] (tried for 20 second(s) with 500 milliseconds interval)",
+      "children" : [ {
+        "name" : "testSuccessfulLogin()",
+        "uid" : "80ec733a3077dd43",
+        "parentUid" : "09b07dc5d83d504a96f5aaa7e7ba40f6",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627905798602,
+          "stop" : 1627905828787,
+          "duration" : 30185
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "09b07dc5d83d504a96f5aaa7e7ba40f6"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
