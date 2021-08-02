@@ -1,0 +1,61 @@
+[ {
+  "uid" : "2cb500678ad5ea36",
+  "name" : "repetition 2 of 5",
+  "time" : {
+    "start" : 1627827870496,
+    "stop" : 1627827877459,
+    "duration" : 6963
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5fce48ed6ade8d04",
+  "name" : "testSuccessfulLogin()",
+  "time" : {
+    "start" : 1627890739089,
+    "stop" : 1627890748191,
+    "duration" : 9102
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "fe20f8fe32629cc7",
+  "name" : "repetition 1 of 5",
+  "time" : {
+    "start" : 1627827862775,
+    "stop" : 1627827870444,
+    "duration" : 7669
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "4f2581e4e49c99b1",
+  "name" : "repetition 3 of 5",
+  "time" : {
+    "start" : 1627827877464,
+    "stop" : 1627827884328,
+    "duration" : 6864
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "819c0ed260340362",
+  "name" : "repetition 4 of 5",
+  "time" : {
+    "start" : 1627827884332,
+    "stop" : 1627827891438,
+    "duration" : 7106
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "5c951e74b008c607",
+  "name" : "repetition 5 of 5",
+  "time" : {
+    "start" : 1627827891443,
+    "stop" : 1627827898367,
+    "duration" : 6924
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
