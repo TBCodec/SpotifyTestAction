@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import pages.HomePage;
+import utils.AddCookie;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -18,6 +19,7 @@ public class BaseTests {
 
     private WebDriver driver;
     protected HomePage homePage;
+    private AddCookie addCookie;
 
     @BeforeEach
     public void setUp(){
@@ -46,6 +48,8 @@ public class BaseTests {
         //options.setExperimentalOption("useAutomationExtension", false);
         /*options.addArguments("disable-infobars");
         options.addArguments("--disable-extensions");*/
+        //options.setExperimentalOption("prefs", {"profile.default_content_settings.cookies": 2});
+
         driver = new ChromeDriver(options);
 
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
@@ -53,7 +57,9 @@ public class BaseTests {
         driver.get("https://open.spotify.com/");
 
         homePage = new HomePage(driver);
-        //homePage.clickCookies();
+        addCookie = new AddCookie(driver);
+        addCookie.addCookie();
+        homePage.clickCookies();
         System.out.println(driver.getCurrentUrl());
     }
 

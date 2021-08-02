@@ -41,6 +41,7 @@ public class HomePage {
     }
 
     public void clickCookies(){
+
         wait = new WebDriverWait(driver, 20);
         wait.until(ExpectedConditions.visibilityOfElementLocated(cookiesAcceptButton));
         try {
