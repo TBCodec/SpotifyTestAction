@@ -16,7 +16,7 @@ public class LoginTest extends BaseTests {
         loginPage.setPasswordField("x2L3c4V5");
         OpenSpotifyPage openSpotifyPage = loginPage.clickSignInButton();
         String logInUser = openSpotifyPage.getUserName();
-        Assertions.assertEquals(logInUser, "litro");
+        Assertions.assertEquals(logInUser, "Szia, litro");
     }
 
 }
