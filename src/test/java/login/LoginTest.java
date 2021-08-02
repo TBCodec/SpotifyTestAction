@@ -11,7 +11,7 @@ public class LoginTest extends BaseTests {
 
     @Test
     public void testSuccessfulLogin(){
-        LoginPage loginPage = homePage.clickProfile();
+        LoginPage loginPage = homePage.clickLogInButton();
         loginPage.setUserNameField("litro@freemail.hu");
         loginPage.setPasswordField("x2L3c4V5");
         OpenSpotifyPage openSpotifyPage = loginPage.clickSignInButton();

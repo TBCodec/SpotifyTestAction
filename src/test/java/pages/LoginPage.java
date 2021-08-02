@@ -20,8 +20,8 @@ import java.util.concurrent.TimeUnit;
 public class LoginPage {
     private int i = 0;
     private WebDriver driver;
-    private By userNameField = By.xpath("//input[@id='login-username']");
-    private By passwordField = By.xpath("//input[@id='login-password']");
+    private By userNameField = By.xpath("//*[@id=\"login-username\"]");
+    private By passwordField = By.xpath("//*[@id=\"login-password\"]");
     private By signInButton = By.id("login-button");
     private By rememberMe = By.xpath("//label[@class='ng-binding']");
     private By alertWarning = By.xpath("//*[@id=\"app\"]//p[@class]//a");
