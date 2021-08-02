@@ -87,7 +87,8 @@ public class HomePage {
             System.out.println();
             System.out.println(field);
             System.out.println(element.getAttribute("id"));
-            System.out.println(element.getLocation());
+            System.out.println(element.getAttribute("div"));
+            System.out.println(element.getText());
             System.out.println();
         }
     }

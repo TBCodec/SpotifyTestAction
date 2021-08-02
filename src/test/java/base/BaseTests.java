@@ -59,7 +59,7 @@ public class BaseTests {
         driver.get("https://spotify.com/");
 
         homePage = new HomePage(driver);
-        addCookie = new AddCookie(driver);
+        //addCookie = new AddCookie(driver);
         //addCookie.addCookie();
         homePage.clickCookies();
         //System.out.println(driver.getCurrentUrl());
