@@ -67,8 +67,6 @@ public class HomePage {
 
         By oneTrustAll = By.xpath("//*[@id=\"onetrust-group-container\"]/parent::div/parent::div/parent::div/parent::div");
         getId(oneTrustAll);
-        By oneTrustAllParent = By.xpath("//*[@id=\"onetrust-group-container\"]/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div");
-        getId(oneTrustAllParent);
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(cookiesAcceptButton));
         /*

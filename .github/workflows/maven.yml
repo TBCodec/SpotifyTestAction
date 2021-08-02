@@ -5,7 +5,7 @@ on: push
 jobs:
   autotests:
     name: Run tests and generate Allure Report
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
 
