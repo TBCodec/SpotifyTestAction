@@ -1,0 +1,10 @@
+[ {
+  "name" : "GitHub Actions",
+  "type" : "github",
+  "url" : "https://TBCodec.github.io/SpotifyTestAction",
+  "buildOrder" : 15,
+  "buildName" : "GitHub Actions Run #1090101326",
+  "buildUrl" : "https://github.com/TBCodec/SpotifyTestAction/actions/runs/1090101326",
+  "reportName" : "Allure Report with history",
+  "reportUrl" : "https://TBCodec.github.io/SpotifyTestAction/15/"
+} ]
