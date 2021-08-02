@@ -52,15 +52,15 @@ public class HomePage {
     public void clickCookies(){
         wait = new WebDriverWait(driver, 20);
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id=\"onetrust-banner-sdk\"]")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(cookiesAcceptButton));
         /*
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
-        driver.findElement(cookiesAcceptButton).click();
         */
+        driver.findElement(cookiesAcceptButton).click();
     }
 
 }
