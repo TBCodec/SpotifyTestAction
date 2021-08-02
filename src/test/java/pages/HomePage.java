@@ -53,6 +53,7 @@ public class HomePage {
         wait = new WebDriverWait(driver, 20);
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id=\"onetrust-policy\"]")));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id=\"onetrust-button-group-parent\"]")));
         wait.until(ExpectedConditions.visibilityOfElementLocated(cookiesAcceptButton));
         /*
         try {
