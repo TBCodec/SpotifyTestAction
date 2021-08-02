@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "element click intercepted: Element <button class=\"Button-qlcn5g-0 hRXuMV\">...</button> is not clickable at point (960, 1063). Other element would receive the click: <div id=\"onetrust-policy\">...</div>\n  (Session info: headless chrome=92.0.4515.107)\nBuild info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'\nSystem info: host: 'fv-az47-334', ip: '10.1.0.10', os.name: 'Linux', os.arch: 'amd64', os.version: '5.8.0-1039-azure', java.version: '1.8.0_302'\nDriver info: org.openqa.selenium.chrome.ChromeDriver\nCapabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 92.0.4515.107, chrome: {chromedriverVersion: 92.0.4515.107 (87a818b10553..., userDataDir: /tmp/.com.google.Chrome.25pB8y}, goog:chromeOptions: {debuggerAddress: localhost:9222}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}\nSession ID: 64ee814eea101a1d2a59e7a6f9967200",
+      "children" : [ {
+        "name" : "testSuccessfulLogin()",
+        "uid" : "f71b30ae55c12ef4",
+        "parentUid" : "2b6120bae4794a64152d97fe90ef6fe7",
+        "status" : "broken",
+        "time" : {
+          "start" : 1627903334624,
+          "stop" : 1627903350294,
+          "duration" : 15670
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "2b6120bae4794a64152d97fe90ef6fe7"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ],
+  "name" : "categories"
+}
