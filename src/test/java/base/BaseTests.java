@@ -53,7 +53,7 @@ public class BaseTests {
         driver.get("https://open.spotify.com/");
 
         homePage = new HomePage(driver);
-        homePage.clickCookies();
+        //homePage.clickCookies();
         System.out.println(driver.getCurrentUrl());
     }
 
