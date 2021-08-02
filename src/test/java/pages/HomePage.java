@@ -67,6 +67,8 @@ public class HomePage {
 
         By oneTrustAll = By.xpath("//*[@id=\"onetrust-group-container\"]/parent::div/parent::div/parent::div/parent::div");
         getId(oneTrustAll);
+        By oneTrustAllParent = By.xpath("//*[@id=\"onetrust-group-container\"]/parent::div/parent::div/parent::div/parent::div/parent::div");
+        getId(oneTrustAllParent);
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(cookiesAcceptButton));
         /*
@@ -87,7 +89,7 @@ public class HomePage {
             System.out.println();
             System.out.println(field);
             System.out.println(element.getAttribute("id"));
-            System.out.println(element.getAttribute("div"));
+            System.out.println(element.getAttribute("class"));
             System.out.println(element.getText());
             System.out.println();
         }
