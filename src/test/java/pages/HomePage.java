@@ -57,14 +57,17 @@ public class HomePage {
 
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id=\"onetrust-policy\"]")));
         By onetrustGroup = By.xpath("//*[@id=\"onetrust-group-container\"]/parent::div/div");
-        wait.until(ExpectedConditions.visibilityOfElementLocated(onetrustGroup));
-        List<WebElement> listOneTrustGroup = driver.findElements(onetrustGroup);
-        for (WebElement element : listOneTrustGroup){
+        getId(onetrustGroup);
 
-            System.out.println(element.getAttribute("id"));
-            System.out.println(element.getLocation());
-            System.out.println();
-        }
+        By oneTrustGroupParent = By.xpath("//*[@id=\"onetrust-group-container\"]/parent::div/parent::div");
+        getId(oneTrustGroupParent);
+
+        By oneTrustGroupParentParent = By.xpath("//*[@id=\"onetrust-group-container\"]/parent::div/parent::div/parent::div");
+        getId(oneTrustGroupParentParent);
+
+        By oneTrustAll = By.xpath("//*[@id=\"onetrust-group-container\"]/parent::div/parent::div/parent::div/parent::div");
+        getId(oneTrustAll);
+
         wait.until(ExpectedConditions.visibilityOfElementLocated(cookiesAcceptButton));
         /*
         try {
@@ -76,4 +79,16 @@ public class HomePage {
         driver.findElement(cookiesAcceptButton).click();
     }
 
+    public void getId(By field){
+
+        wait.until(ExpectedConditions.visibilityOfElementLocated(field));
+        List<WebElement> listOneTrustGroup = driver.findElements(field);
+        for (WebElement element : listOneTrustGroup){
+            System.out.println();
+            System.out.println(field);
+            System.out.println(element.getAttribute("id"));
+            System.out.println(element.getLocation());
+            System.out.println();
+        }
+    }
 }
