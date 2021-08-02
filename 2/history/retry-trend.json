@@ -1,9 +1,0 @@
-[ {
-  "buildOrder" : 2,
-  "reportUrl" : "https://TBCodec.github.io/SpotifyTestAction/2/",
-  "reportName" : "Allure Report with history",
-  "data" : {
-    "run" : 2,
-    "retry" : 0
-  }
-} ]

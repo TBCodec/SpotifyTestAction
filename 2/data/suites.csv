@@ -1,3 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"broken","Sun Aug 01 14:28:53 GMT 2021","Sun Aug 01 14:28:58 GMT 2021","4149","","login.LoginTest","","login.LoginTest","testSuccessfulLogin","testSuccessfulLogin()",""
-"broken","Sun Aug 01 14:28:58 GMT 2021","Sun Aug 01 14:28:58 GMT 2021","212","","registration.RegistrationTests","","registration.RegistrationTests","testSuccessfulRegistration","testSuccessfulRegistration()",""
